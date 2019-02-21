@@ -1,0 +1,40 @@
+//Navbar styles partial
+
+header {
+    padding: 45px;
+
+    .main-logo-link {
+        display: block;
+        outline: none;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            @include flex-layout-row;
+
+                a {
+                    display: block;
+                    padding: 15px 20px;
+                    text-transform: uppercase;
+                    color: $white;
+                    text-decoration: none;
+                    font-size: $body-fs;
+                    border: 3px solid transparent;
+                }
+
+                a:hover {
+                    border-bottom: 3px solid $red;
+                }
+
+                
+        }
+
+
+    }
+}

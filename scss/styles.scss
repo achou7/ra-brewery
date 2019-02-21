@@ -1,7 +1,16 @@
 //Importing all partials
 
-//Variables, Mixins, Functions
+//Variables, Mixins, Functions, Resets
 @import "mixins";
 @import "variables";
 @import "functions";
+@import "resets";
+@import "typography";
 
+//Import Global Element Partials ex. Navbar, Logo etc.
+@import "body";
+@import "navbar";
+
+
+//Import Page Partials
+@import "product";
