@@ -1,0 +1,53 @@
+//contact page document styles
+
+.contact-main{
+    display:grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 300px 200px;
+    grid-auto-flow:row;
+}
+
+.contact-img{
+    grid-row: 2/2;
+}
+
+.contact-text{
+    grid-row: 1/2;
+    color: $white;
+    text-align: center;
+}
+.contact-text h1{
+    font-size: 3.2em;
+    text-transform: uppercase;
+    
+}
+.fab{
+    font-size: 3em;
+    padding:10px;
+}
+
+.hours{
+    color: $white;
+    text-align:center;
+}
+.hours h2{
+    font-size:2.5em;
+}
+.hours p{
+    font-size: 15px;
+}
+.location{
+    color: $white;
+    text-align:center;
+}
+.location h2{
+    font-size:2.5em;
+}
+
+.newsletter {
+    color: $white;
+    
+}
+.email{
+    display:flex;
+}
