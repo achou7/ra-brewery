@@ -2,7 +2,7 @@
 
 //slideshow container
 .carousel-container{
-    max-width:50%;
+    max-width:90%;
     position:relative;
     margin:auto;
     display:grid;
@@ -65,3 +65,13 @@
       border-bottom: $red 2px solid;
   }
 
+  @media screen and (min-width: 950px){
+    .carousel-container{
+        max-width:70%;
+  }
+  }
+  @media screen and (min-width: 1400px){
+    .carousel-container{
+        max-width:50%;
+  }
+  }
