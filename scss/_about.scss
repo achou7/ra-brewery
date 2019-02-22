@@ -1,43 +1,74 @@
 // styles for about page
 
 .white-container{
-    border:1px solid white;
-    position:relative;
-    width: 500px;
-    height: 700px;
     margin:0 auto;
+    position:relative;
 }
-.white-container h1{
-    color: $white;
-    font-size:4em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: uppercase;
-    
-}
+
 .about-text h1{
-    font-size: 4em;
+    font-size: 3.5em;
     color: $white;
-    width: 300px;
-    position:absolute;
-    left: -12%
-    
-}
-.about-text div{
-    color: $white;
-    position:absolute;
-    top: 17%;
-    left: 10%;
-    font-size: 16px;
-    line-height: 1.8em;
-    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 
-.title-img {
-    position: absolute;
-    left: 60%;
-    top: 50%;
-    transform: translateY(-50%);
-    max-width: 125%;
-    z-index: 2;
+.about-text div{
+    color: $white;
+    font-size: 13px;
+    line-height: 1.8em;
+    margin:0 auto;
+    padding: 0 20px;
+    width:90%;
 }
+
+@media screen and (min-width: 460px){
+    .white-container{
+            border:1px solid white;
+            width: 90%;
+            height: 100%;
+        }
+    .about-text div{
+        width:90%;
+        font-size:16px;
+    }
+    .title-img {
+        display:block;
+        margin:0 auto;
+        width:90%;
+        padding:30px 0px;
+    }
+}
+@media screen and (min-width: 950px){
+
+.white-container{
+        width: 500px;
+        height: 700px;
+}
+.about-text h1{
+        font-size: 4em;
+        margin-top:10;
+        position:absolute;
+        top: 0%;
+        left: -12%
+}  
+.about-text div{
+        position:absolute;
+        top: 17%;
+        left: 5%;
+        font-size: 16px;
+        line-height: 1.8em;
+        width: 50%;     
+    }
+
+    .title-img {
+            position: absolute;
+            left: 60%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            width:78%;
+        }
+
+}   
