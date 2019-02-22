@@ -18,5 +18,13 @@
             max-width: 125%;
             z-index: 2;
         }
+
+        .overlay-text {
+            position: absolute;
+            right: -50%;
+            margin: 0;
+            color: $white;
+            font-size: $body-fs;
+        }
     }
 }
