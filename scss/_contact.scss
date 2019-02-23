@@ -5,49 +5,157 @@
     grid-template-columns: 100% ;
     grid-template-rows: 300px 200px;
     grid-auto-flow:row;
+
 }
 
 .contact-img{
     grid-row: 2/2;
+    overflow:auto;
+    
 }
 
 .contact-text{
     grid-row: 1/2;
     color: $white;
     text-align: center;
+
+    h1{
+        font-size: 2.8em;
+        text-transform: uppercase;
+    }
+    p{
+        font-size:15px;
+    }
+    .fab{
+        font-size: 3em;
+        padding:10px;
+    }
 }
-.contact-text h1{
-    font-size: 3.2em;
-    text-transform: uppercase;
-    
-}
-.fab{
-    font-size: 3em;
-    padding:10px;
-}
+
+// .info{
+//     height: 800px;
+// }
 
 .hours{
     color: $white;
     text-align:center;
+
+    h2{
+        font-size:$h2-fs;
+        margin-bottom: 5px;
+    }
+
+    p{
+        font-size: 15px;
+    }
 }
-.hours h2{
-    font-size:2.5em;
-}
-.hours p{
-    font-size: 15px;
-}
+
 .location{
     color: $white;
     text-align:center;
-}
-.location h2{
-    font-size:2.5em;
+
+    img{
+        width:95%;
+    }
+    h2{
+        font-size:$h2-fs;
+        margin-bottom: 5px;
+    }
+    p{
+        line-height:.8em;
+    }
+    .location-text{
+        padding-bottom: 10px;
+    }
 }
 
 .newsletter {
     color: $white;
-    
+    text-align: center;
+    margin-top: 0;
+
+    h2{
+        font-size:$h2-fs;
+    }
 }
-.email{
+.subscribe{
     display:flex;
+    justify-content: center;
+    margin-bottom:50px;
+    
+
+    input{
+        font-size: 0.8em;
+        background-color: black;
+        color:$white;
+        border:1px solid $white;
+        padding: 5px;
+    }
+
+    .email{
+     display:flex;   
+    }
+}
+
+.feedback{
+    text-align: center;
+    color: $white;
+
+    h2{
+        font-size: $h2-fs;
+          
+    }
+
+    form{
+        display:block;
+    }
+}
+    .form-feedback{
+    label{
+        font-size: 13px;
+        display: inline-block;
+        text-align: right;
+        width: 45px;
+    }
+    input{
+        display: inline-block;
+        margin-left: 10px;
+        // padding: 0 10px;
+        font-size: 0.8em;
+        background-color: black;
+        color:$white;
+        border:1px solid $white;
+    }
+}
+
+.how-contact{
+    display:flex;
+    text-align:center;
+    width:150px;
+    margin: auto;
+    
+    label{
+        display:inline-block; 
+        
+    }
+    input{
+        display: inline-block;
+        
+    }
+
+}
+
+.form-style{
+
+    textarea{
+        width: 90%;
+        height: 100px;
+        font-size: 0.8em;
+        background-color: black;
+        color:$white;
+    }
+}
+.s-button{
+    padding: 5px 10px;
+    text-transform: uppercase;
 }

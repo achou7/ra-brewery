@@ -42,6 +42,7 @@
                 </nav>
             </header>
 <main>
+        <!-- <div class="grid"> -->
         <div class="white-container contact-main">
                 <img class="contact-img" src="images/contact-title.jpg" alt="Beer tasting">
                 <div class="contact-text">
@@ -55,8 +56,8 @@
                     </div>
             </div><!--end of contact text -->
             </div> <!-- end of white container -->
-
-            <br class="break-line">
+            <div class="info">
+            <hr>
 
             <section>
             <article class="hours">
@@ -84,23 +85,26 @@
 
             </article>
 
-            
+            <hr>
             <article class="newsletter">
                 <h2>Newsletter</h2>
                     <form action="./20-thank-you.html" method="POST" name="subscribe" class="subscribe" id="subscribe">
                     <label for="email1" class="sr-only">Email Address</label>
-                    <input class="email" type="email" id="email1" name="email" placeholder="Email Address">
-                    <br>
+                    <div class="email">
+                    <input type="email" id="email1" name="email" placeholder="Email Address">
+                
                     <input class="submit" type="submit" value="Subscribe">
+                    </div>
                     </form>
             </article>
 
             </section>
 
-            <br class="break-line">
+            <hr>
 
-            <section>
-                    <form action="./20-thank-you.html" method="POST" name="feedback" class="feedback" id="feedback">
+            <section class="feedback">
+                <h2>Feedback</h2>
+                    <form action="./20-thank-you.html" method="POST" name="feedback" class="form-feedback" id="feedback">
                     
                         <div class="form-style">
                         <label for="name">Name:</label>
@@ -123,19 +127,19 @@
 
                         <br>
 
-                        <div class="form-style">
                         <p>How would you like to be contacted?</p>
+
+                        <div class="how-contact">
 
                         <input type="radio" id="how-email" name="how" 
                         value="how-email" checked>
                         <label for="how-email">Email</label>
-
+                        
                         <br>
                         
                         <input type="radio" id="how-phone" name="how" value="how-phone" checked>
                         <label for="how-phone">Phone</label>
-                        </div>
-
+                        </div><!-- end of how-contact -->
                         <br>
 
                         <div class="form-style">
@@ -145,11 +149,12 @@
 
                         <br>
                         <div class="submit-button">
-                        <input type="submit" value="Submit">
+                        <input class="s-button" type="submit" value="Submit">
                         </div>
                     </form>
             </section>
-
+        </div><!-- end of info -->
+        <!-- </div>grid -->
 </main>
 
 <footer>
