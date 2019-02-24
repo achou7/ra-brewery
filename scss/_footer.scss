@@ -1,0 +1,50 @@
+//footer styles
+
+footer{
+    padding: 10px;
+    background-color: $grey;
+    display:flex;
+    justify-content: space-between;
+.copyright{
+    color: $white;
+    text-align: center;
+    font-size:.6em;
+
+    a{
+        color:$white;
+        text-decoration: none;
+    }
+    a:hover{
+        color:black;
+    }
+}
+}
+
+.social-media{
+    text-align: center;
+
+        .fab{
+        font-size: 1em;
+        padding: 5px 3px;
+        
+    }
+    a{ color:$white;}
+    a:hover{ color: black;}
+
+}
+
+@media screen and (min-width:460px){
+
+    footer .copyright{
+        font-size:1em;
+    }
+
+
+    .social-media{
+            
+            .fab{
+           font-size: 2em;
+        }
+
+    }
+}

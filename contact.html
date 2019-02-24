@@ -50,9 +50,9 @@
                 <p>Phone : 604.434.5734</p>
                 <p>Email : RABrewing@ra.brewing.com</p>
                     <div class="contact-social">
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-twitter-square"></i>
-                        <i class="fab fa-instagram"></i>
+                        <a href="http://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="http://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="http://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
             </div><!--end of contact text -->
             </div> <!-- end of white container -->
@@ -108,7 +108,10 @@
                 <h2>Feedback</h2>
                     <form action="./20-thank-you.html" method="POST" name="feedback" class="form-feedback" id="feedback">
                     
+                        <div class="form-flex">
+                        <div class="form-info-1">
                         <div class="form-style">
+                        
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name">
                         </div>
@@ -142,9 +145,13 @@
                         <input type="radio" id="how-phone" name="how" value="how-phone" checked>
                         <label for="how-phone">Phone</label>
                         </div><!-- end of how-contact -->
+                        </div><!-- end of form-info-1 -->
+
+                        
                         <br>
 
-                        <div class="form-style">
+                        <div class="form-info-1">
+                        <div class="form-style message">
                         <p>Message:</p>
                         <textarea name="comments" id="comments"></textarea>
                         </div>
@@ -153,20 +160,24 @@
                         <div class="submit-button">
                         <input class="s-button" type="submit" value="Submit">
                         </div>
+                    </div>
+                    <!-- end of form-infor -->
+                    </div><!-- end of form-flex -->
                     </form>
             </section>
         </div><!-- end of info -->
-        <!-- </div>grid -->
+      
 </main>
 
 <footer>
         <div class="copyright">
-            <p>Designed by : Ryan & Alvin 2019 &copy</p>
+            
+            <p>Designed by : <a href="http://rleung.bcitwebdeveloper.ca/" target="_blank">Ryan</a> & <a href="http://achou.bcitwebdeveloper.ca/" target="_blank">Alvin</a> 2019 &copy</p>
         </div>
-        <div class="social=media">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-instagram"></i>
+        <div class="social-media">
+            <a href="http://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="http://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="http://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
           
         </div>
     </footer>
