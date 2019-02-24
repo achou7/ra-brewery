@@ -37,7 +37,12 @@
         padding:10px;
 
     }
+    span{
+        font-weight:bold;
+        font-size: 17px;
+    }
 }
+
 
 .contact-social{
     a { color: $white;}
@@ -58,6 +63,10 @@
     p{
         font-size: 15px;
     }
+    span{
+        font-weight:bold;
+        font-size: 17px;
+    }
 }
 
 .location{
@@ -72,7 +81,7 @@
         margin-bottom: 5px;
     }
     p{
-        line-height:.8em;
+        line-height:.4em;
     }
     .location-text{
         padding-bottom: 10px;

@@ -6,10 +6,12 @@
 @import "functions";
 @import "resets";
 @import "typography";
+@import "animations";
 
 //Import Global Element Partials ex. Navbar, Logo etc.
 @import "body";
 @import "navbar";
+@import "footer";
 
 
 //Import Page Partials
@@ -17,4 +19,3 @@
 @import "landingpage";
 @import "about";
 @import "contact";
-@import "footer";
