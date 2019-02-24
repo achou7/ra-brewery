@@ -45,6 +45,10 @@
     flex-wrap: wrap;
 }
 
+@mixin overlayBoxHeight($w) {
+    height: calc($w*0.55);
+}
+
 // Media Query Mixin
 @mixin mq($w) {
     @media (max-width: $w) {
