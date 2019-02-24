@@ -4,3 +4,8 @@ body {
     background-color: #000;
     font-family: Calibri, sans-serif;
 }
+hr{
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, black, $red, black);
+    }

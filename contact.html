@@ -42,33 +42,34 @@
                 </nav>
             </header>
 <main>
-        <div class="white-container contact-main">
+        <!-- <div class="grid"> -->
+        <div class="white-container contact-main fadeInLeft">
                 <img class="contact-img" src="images/contact-title.jpg" alt="Beer tasting">
                 <div class="contact-text">
-                <h1>Contact Us</h1>
-                <p>Phone : 604.434.5734</p>
-                <p>Email : RABrewing@ra.brewing.com</p>
-                    <div class="contact-social">
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-twitter-square"></i>
-                        <i class="fab fa-instagram"></i>
+                <h1 class="fadeInRight">Contact Us</h1>
+                <p class="fadeInRight"><span>Phone</span> : 604.434.5734</p>
+                <p class="fadeInRight"><span>Email</span> : RABrewing@ra.brewing.com</p>
+                    <div class="contact-social fadeInRight">
+                        <a href="http://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="http://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="http://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                     </div>
             </div><!--end of contact text -->
             </div> <!-- end of white container -->
+            <div class="info">
+            <hr>
 
-            <br class="break-line">
-
-            <section>
+            <section class="store">
             <article class="hours">
                 <h2>Hours</h2>
-                <p>Monday: 11am - 11pm</p>
-                <p>Tuesday: 11am - 11pm</p>
-                <p>Wednesday: 11am - 11pm</p>
-                <p>Thursday: 11am - 11pm</p>
-                <p>Friday: 10am - 1am</p>
-                <p>Saturday: 10am - 1am</p>
-                <p>Sunday / Holidays :  11am - 11pm</p>
-                <p>**Closed on christmas day and christmas eve</p>
+                <p><span>Monday :</span> 11am - 11pm</p>
+                <p><span>Tuesday :</span> 11am - 11pm</p>
+                <p><span>Wednesday :</span> 11am - 11pm</p>
+                <p><span>Thursday :</span> 11am - 11pm</p>
+                <p><span>Friday :</span> 10am - 1am</p>
+                <p><span>Saturday :</span> 10am - 1am</p>
+                <p><span>Sunday / Holidays :</span>  11am - 11pm</p>
+                <p><span>**Closed on christmas day and christmas eve</span></p>
             </article>
 
             <article class="location">
@@ -83,26 +84,34 @@
                     </div>
 
             </article>
-
-            
+        </section>
+        <section>
+                <hr>
             <article class="newsletter">
+               
                 <h2>Newsletter</h2>
                     <form action="./20-thank-you.html" method="POST" name="subscribe" class="subscribe" id="subscribe">
                     <label for="email1" class="sr-only">Email Address</label>
-                    <input class="email" type="email" id="email1" name="email" placeholder="Email Address">
-                    <br>
+                    <div class="email">
+                    <input type="email" id="email1" name="email" placeholder="Email Address">
+                
                     <input class="submit" type="submit" value="Subscribe">
+                    </div>
                     </form>
             </article>
 
             </section>
 
-            <br class="break-line">
+            <hr>
 
-            <section>
-                    <form action="./20-thank-you.html" method="POST" name="feedback" class="feedback" id="feedback">
+            <section class="feedback">
+                <h2>Feedback</h2>
+                    <form action="./20-thank-you.html" method="POST" name="feedback" class="form-feedback" id="feedback">
                     
+                        <div class="form-flex">
+                        <div class="form-info-1">
                         <div class="form-style">
+                        
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name">
                         </div>
@@ -123,43 +132,52 @@
 
                         <br>
 
-                        <div class="form-style">
                         <p>How would you like to be contacted?</p>
+
+                        <div class="how-contact">
 
                         <input type="radio" id="how-email" name="how" 
                         value="how-email" checked>
                         <label for="how-email">Email</label>
-
+                        
                         <br>
                         
                         <input type="radio" id="how-phone" name="how" value="how-phone" checked>
                         <label for="how-phone">Phone</label>
-                        </div>
+                        </div><!-- end of how-contact -->
+                        </div><!-- end of form-info-1 -->
 
+                        
                         <br>
 
-                        <div class="form-style">
+                        <div class="form-info-1">
+                        <div class="form-style message">
                         <p>Message:</p>
                         <textarea name="comments" id="comments"></textarea>
                         </div>
 
                         <br>
                         <div class="submit-button">
-                        <input type="submit" value="Submit">
+                        <input class="s-button" type="submit" value="Submit">
                         </div>
+                    </div>
+                    <!-- end of form-infor -->
+                    </div><!-- end of form-flex -->
                     </form>
             </section>
-
+        </div><!-- end of info -->
+      
 </main>
 
 <footer>
         <div class="copyright">
-            <p>Designed by : Ryan & Alvin 2019 &copy</p>
+            
+            <p>Designed by : <a href="http://rleung.bcitwebdeveloper.ca/" target="_blank">Ryan</a> & <a href="http://achou.bcitwebdeveloper.ca/" target="_blank">Alvin</a> 2019 &copy</p>
         </div>
-        <div class="social=media">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-instagram"></i>
+        <div class="social-media">
+            <a href="http://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="http://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="http://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
           
         </div>
     </footer>
