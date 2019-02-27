@@ -1,0 +1,224 @@
+//Styles for Beers page
+
+.beers-hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+    
+    .top-menu-text {
+        display: inline-block;
+        width: 30%;
+        h2 {
+            color: $white;
+            font-size: 3.3em;
+            text-transform: uppercase;
+        }
+
+        ul {
+            list-style-type: none;
+            li {
+                a {
+                    color: white;
+                    text-decoration: none;
+                    outline: none;
+                    font-size: 1.5em;
+                    padding: 5px;
+                    margin-bottom: 5px;
+                    display: block;
+                    font-weight: 700;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                    text-decoration-color: #d30000;
+                }
+            }
+        }
+    }
+
+    .box-overlay {
+        position: relative;
+        display: inline-block;
+        border: 1px solid $white;
+        width: 35vw;
+        height: 30vw;
+        z-index: 1;
+
+        .overlay-img {
+            position: absolute;
+            left: -30%;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 125%;
+            z-index: 2;
+        }
+    }
+}
+
+.beer-content {
+    position: relative;
+    width: 60%;
+    margin: 60px auto 60px auto;
+    border: 1px solid #fff;
+    padding: 30px;
+    opacity: 1;
+    
+
+    h2 {
+        position: absolute;
+        font-size: 4em;
+        color: white;
+        top: 0;
+        left: -2%;
+        margin-top: 0;
+    }
+
+    .articles-div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        padding: 60px 30px;
+        
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .art-text {
+                width: 50%;
+                h3, p {
+                    color: white;
+                }
+            }
+        }
+    }
+    
+}
+
+.mid-banner {
+    margin-top: 120px;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 374px;
+}
+
+.banner-01 {
+    background-image: url("../images/beer-mid-banner.jpg");
+}
+
+.banner-02 {
+    background-image: url("../images/beer-page-bg-02.jpg");
+}
+
+.banner-03 {
+    background-image: url("../images/beer-page-bg-01.jpg");
+}
+
+@include mq(1200px) {
+    .beers-hero {
+        
+        .top-menu-text {
+            width: 40%;
+            h2 {
+                font-size: 2em;
+            }
+        }
+
+        .box-overlay {
+            width: 30vw;
+        }
+    }
+
+    .beer-content {
+        h2 {
+            position: relative;
+            top: 0;
+            margin: 0;
+            text-align: center;
+        }
+        .articles-div {
+            grid-template-columns: repeat(2, 1fr);
+            padding: 30px;
+        }
+    }
+}
+
+@include mq(880px) {
+    .beers-hero {
+        display: block;
+        border: 1px solid white;
+        .top-menu-text {
+            width: 100%;
+            display: block;
+            h2 {
+                font-size: 4em;
+                text-align: center;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                padding: 15px;
+            }
+        }
+        .box-overlay {
+            width: 100%;
+            display: block;
+            height: auto;
+            border: none;
+            padding: 15px;
+
+            .overlay-img {
+                position: relative;
+                top: 0;
+                left: 0;
+                max-width: 100%;
+                transform: none;
+            }
+        }
+    }
+
+    .beer-content {
+        h2 {
+            position: relative;
+            top: 0;
+            margin: 0;
+            text-align: center;
+        }
+        .articles-div {
+            display: block;
+            padding: 15px;
+            
+            article {
+                margin-bottom: 30px;
+                padding: 0;
+            }
+
+        }
+    }
+}
+
+@include mq(650px) {
+    .beers-hero, .beer-content {
+        width: 85%;
+    }
+
+    .beers-hero {
+        .top-menu-text {
+            h2 {
+                font-size: 2.5em;
+            }
+        }
+    }
+
+    .beer-content {
+        h2 {
+            font-size: 2.5em;
+        }
+    }
+}

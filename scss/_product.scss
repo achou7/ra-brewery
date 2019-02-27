@@ -179,6 +179,7 @@
         width: 80%;
         padding: 45px;
         margin: 0 auto;
+        border: 1px solid white;
         .box-overlay {
             width: 100%;
             height: auto;
@@ -206,6 +207,10 @@
             
 
         }
+    }
+    .body-div.types-div {
+        border-top: 1px solid #d30000;
+        margin-top: 45px;
     }
 }
 

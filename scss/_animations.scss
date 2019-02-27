@@ -19,6 +19,18 @@
     animation-duration: 2.5s;
   }
 
+  .fadeInLeftFast {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    animation-duration: 1s;
+  }
+
+  .fadeInRightFast {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    animation-duration: 1s;
+  }
+
 
   @keyframes fadeInRight {
     from {
