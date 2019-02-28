@@ -3,12 +3,17 @@
 footer{
     padding: 10px;
     background-color: $grey;
-    display:flex;
-    justify-content: space-between;
+    display:block;
+    // display:flex;
+    // justify-content: space-between;
+
 .copyright{
     color: $white;
     text-align: center;
-    font-size:.6em;
+    font-size: .8em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 
     a{
         color:$white;
@@ -22,16 +27,64 @@ footer{
 
 .social-media{
     text-align: center;
+    color:$white;
+    border-bottom: 1px solid $white;
+    border-top: 1px solid $white;
+    padding: 20px 0px;
 
         .fab{
-        font-size: 1em;
+        font-size: 2em;
         padding: 5px 3px;
+    
         
     }
     a{ color:$white;}
     a:hover{ color: black;}
 
 }
+
+
+
+.newsletter {
+    color: $white;
+    text-align: center;
+    margin-top: 5px;
+
+    h2{
+        font-size:$h2-fs;
+   
+  
+
+    .email-section{
+    //  display:flex;   
+    display:block; 
+    background-color: white;
+    text-align: left;
+    margin-bottom: 50px;
+    align-items:center;
+    font-size: .5em;
+     
+    
+    input{
+        border:1px solid $white;
+        padding: 5px;
+        align-items:right;
+        width:90%;
+        padding:10px;
+    
+        .submit{
+            margin-top: 10px;
+        }
+        .subscribe-button{
+        display:block;
+        margin-top:10px;
+
+        }
+        }
+    }
+}
+}
+
 
 @media screen and (min-width:460px){
 
@@ -47,4 +100,36 @@ footer{
         }
 
     }
+}
+
+@media screen and (min-width:700px){
+
+    footer{
+        display:flex;
+        justify-content: space-around;
+
+        .copyright{
+            
+            margin-top: 50px;
+        }
+.social-media{
+            text-align: center;
+            border:none;
+            padding: 0px;
+        
+                .fab{
+                font-size: 2.5em;
+                padding: 5px 3px;
+            
+                
+            }
+
+    }
+
+}
+.newsletter{
+    margin-bottom: 50px;
+    text-align:left;
+    font-size: 1em;
+}
 }

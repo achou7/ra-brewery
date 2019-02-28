@@ -36,6 +36,7 @@
         font-size: 3em;
         padding:10px;
 
+
     }
     span{
         font-weight:bold;
@@ -88,33 +89,7 @@
     }
 }
 
-.newsletter {
-    color: $white;
-    text-align: center;
-    margin-top: 0;
 
-    h2{
-        font-size:$h2-fs;
-    }
-}
-.subscribe{
-    display:flex;
-    justify-content: center;
-    margin-bottom:50px;
-    
-
-    input{
-        font-size: 0.8em;
-        background-color: black;
-        color:$white;
-        border:1px solid $white;
-        padding: 5px;
-    }
-
-    .email{
-     display:flex;   
-    }
-}
 
 .feedback{
     text-align: center;
@@ -134,12 +109,12 @@
     label{
         font-size: 13px;
         display: inline-block;
-        text-align: right;
-        width: 45px;
+        text-align: left;
+        width: 100%;
     }
     input{
         display: inline-block;
-        margin-left: 10px;
+        // margin-left: 10px;
         // padding: 0 10px;
         font-size: 0.8em;
         background-color: black;
@@ -148,6 +123,16 @@
     }
 }
 
+.email-me{
+    text-align:right;
+
+    label{
+        width:auto;
+        text-align:left;
+        margin-right: 5%;
+        margin-top: 10px;
+    }
+}
 .how-contact{
     display:flex;
     text-align:center;
@@ -235,8 +220,13 @@
             textarea{
             width: 70%;}
         }
-        .submit-button{
-            margin-right:15%;
+
+.email-me{
+            text-align:right;
+        
+            label{
+                margin-right: 15%;
+            }
         }
 
 }//<-- media 650 end
@@ -248,7 +238,7 @@
         margin-top:0;
         
         textarea{
-            width: 90%;
+            width: 100%;
         }
     }
 
@@ -261,12 +251,15 @@
         .form-info-1
         {
             display:block;
-            width:80%;
-            margin:auto;
+            text-align:left;
         }
     }//<-- media 900 end
 
-
+    .form-info-2{
+        text-align:left;
+        width:100%;
+        margin-left: 10px;
+    }
 @media screen and (min-width: 1075px){
 
     .contact-main{
