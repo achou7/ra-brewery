@@ -7,7 +7,6 @@ $('.hamburger').click(function() {
 $('.scroll-link').click(function() {
   
   let el = $(this).attr('href');
-  console.log($(el).offset().top);
   $('html, body').animate(
     {scrollTop: $(el).offset().top - 30}
   , 1000)
@@ -20,8 +19,6 @@ $('.back-to-top').click(function() {
 });
 
 $(window).scroll(function() {
-  console.log(parseInt($(window).height()*2));
-  console.log($('html,body').scrollTop());
   if($('html, body').scrollTop() < parseInt($(window).height()/2)) {
     $('.back-to-top').css('opacity', '0');
   }

@@ -1,0 +1,221 @@
+//Styles for food page
+.food-hero {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 90px;
+    h2 {
+        font-size: 4em;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 3;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+    }
+    .box-overlay {
+        position: absolute;
+        display: inline-block;
+        border: 1px solid $white;
+        width: 30vw;
+        height: 27vw;
+        z-index: 1;
+        left: -5%;
+        top: 0;
+    }
+    .overlay-img {
+        width: 95%;
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        z-index: 2;
+    }
+}
+
+.food-content {
+    border-top: 1px solid #d30000;
+    width: 80%;
+    padding: 60px;
+    margin: 0 auto;
+    .food-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 60px;
+        padding: 30px 0;
+
+        .food-overlay {
+            border: 1px solid white;
+            position: relative;
+            width: 20vw;
+            height: 35vw;
+            
+            .food-header {
+                font-size: 3em;
+                color: white;
+                position: absolute;
+                left: -5%;
+                top: 0;
+                margin: 0;
+                z-index: 2;
+            }
+            .food-overlay-img {
+                position: absolute;
+                top: 12%;
+                right: -5%;
+                z-index: 1;
+            }
+        }
+
+        .food-text{
+            article {
+                width: 80%;
+                margin: 0 auto;
+                padding: 0 15px;
+                h2 {
+                    margin: 0;
+                }
+            }
+            
+        }
+    }
+}
+
+@include mq(1200px) {
+    .food-hero {
+        h2 {
+            font-size: 3em;
+        }
+        
+        .overlay-img {
+            width: 90%;
+            position: relative;
+            margin: 0 auto;
+            display: block;
+            z-index: 2;
+        }
+    }
+
+    .food-content {
+            .food-wrapper {
+                .food-overlay {
+
+                    width: 25vw;
+                    height: 35vw;
+                }
+        
+                .food-text{
+                    article {
+                        width: 90%;
+                }
+            }
+        }
+    }   
+}
+
+@include mq(950px) {
+    .food-hero {
+        border: 1px solid white;
+        margin-bottom: 60px;
+        .box-overlay {
+            display: none;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+        
+        .overlay-img {
+            width: 90%;
+            z-index: 2;
+        }
+    }
+
+    .food-content {
+            .food-wrapper {
+                display: block;
+                
+                .food-overlay {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 45px;
+                    .food-header {
+                        position: relative;
+                        text-align: center;
+                        top: auto;
+                        left: auto;
+                    }
+
+                    .food-overlay-img {
+                        position: relative;
+                        top: auto;
+                        right: auto;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+        
+                .food-text{
+                    position: relative;
+                    top: auto;
+                    left: auto;
+                    article {
+                        width: 90%;
+                }
+            }
+        }
+    }   
+}
+
+@include mq(690px) {
+
+    .food-hero {
+        width: 100%;
+        border: none;
+        padding: 30px 0;
+
+        h2 {
+            font-size: 3em;
+        }
+        
+        .overlay-img {
+            width: 100%;
+            z-index: 2;
+        }
+    }
+    .food-content {
+        .food-wrapper {
+            display: block;
+            width: 100%;
+            .food-overlay {
+                width: 100%;
+                height: auto;
+                margin-bottom: 45px;
+                .food-header {
+                    position: relative;
+                    text-align: center;
+                    top: auto;
+                    left: auto;
+                }
+
+                .food-overlay-img {
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+    
+            .food-text{
+                
+                article {
+                    width: 100%;
+                }
+        }
+    }
+}   
+}
