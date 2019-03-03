@@ -109,7 +109,6 @@
     label{
         font-size: 13px;
         display: inline-block;
-        text-align: left;
         width: 100%;
     }
     input{
@@ -133,6 +132,18 @@
         margin-top: 10px;
     }
 }
+.subject{
+    text-align: center;
+    margin-top:20px;
+
+        label{
+            padding-bottom: 10px;
+        }
+        select{
+            background-color: black;
+            color: $white;
+        }
+}
 .how-contact{
     display:flex;
     text-align:center;
@@ -151,9 +162,10 @@
 }
 
 .form-style{
+    text-align: center;
 
     textarea{
-        width: 90%;
+        width: 80%;
         height: 100px;
         font-size: 0.8em;
         background-color: black;
@@ -166,13 +178,15 @@
 }
 
 .submit-button{
-    text-align:right;
-    margin-right:5%;
+    text-align:center;
 }
 
 .s-button{
     padding: 5px 10px;
     text-transform: uppercase;
+}
+.email-me{
+    text-align:center;
 }
 
 @media screen and (min-width: 460px){
@@ -208,6 +222,7 @@
         .newsletter{
             grid-area: newsletter;
         }
+
     
 } //<-- media 460 end
 
@@ -222,17 +237,21 @@
         }
 
 .email-me{
-            text-align:right;
+            text-align:center;
+            margin: auto;
         
-            label{
-                margin-right: 15%;
-            }
         }
 
 }//<-- media 650 end
 
 @media screen and (min-width: 900px){
-
+    .form-feedback{
+        width:100%;
+    }
+    .feedback{
+        margin:auto;
+        width:75%;
+    }
     .message{
         text-align:left;
         margin-top:0;
@@ -241,25 +260,59 @@
             width: 100%;
         }
     }
+    .form-style{
+            text-align: left;
+
+        label{
+            text-align:left;
+        }
+    }
 
        .form-flex{
             display:flex;
             justify-content: space-between;
-            width: 50%;
+            width: 60%;
             margin:auto;
         }
         .form-info-1
         {
             display:block;
             text-align:left;
+            width:80%;
         }
-    }//<-- media 900 end
+.how-contact{
+    text-align:left;
+    width:100%;
+    margin:0;
+
+    label{
+        width:50px;
+    }
+}
 
     .form-info-2{
         text-align:left;
-        width:100%;
+        width:80%;
         margin-left: 10px;
     }
+    .subject{
+        text-align:left;
+        margin:0;
+    }
+    .submit-button{
+        text-align: right;
+    }
+    .email-me{
+        
+        padding-top: 5px;
+        text-align: right;
+        width:60%;
+        label{
+            margin:0;
+        }
+    }
+
+        }//<-- media 900 end
 @media screen and (min-width: 1075px){
 
     .contact-main{

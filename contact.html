@@ -149,7 +149,7 @@
 
                         <br>
 
-                        <div class="form-info-2">
+                    <div class="form-info-2">
                         <div class="subject">
                         <label for="subject">Subject: </label>
                         <select name="subject" id="subject">
@@ -161,7 +161,6 @@
                         </div>
                         <br>
 
-                        <div class="form-info-1">
                         <div class="form-style message">
                         <p>Message:</p>
                         <textarea name="comments" id="comments"></textarea>
@@ -171,12 +170,12 @@
                         <div class="submit-button">
                         <input class="s-button" type="submit" value="Submit">
                         </div>
-                    </div>
+                    
 
-                    <div class="email-me">
-                            <input type="checkbox" name="email-me" id="email-me">
-                            <label for ="email-me">Email myself a copy</label>
-                            </div>
+                        <div class="email-me">
+                        <input type="checkbox" name="email-me" id="email-me">
+                        <label for ="email-me">Email myself a copy</label>
+                        </div>
                             <br>
                     <!-- end of form-infor -->
                     </div><!-- end of form-info-02 -->
@@ -188,11 +187,32 @@
 </main>
 
 <footer>
-        
-        <div class="copyright">
-            <p>Designed by : <a href="http://rleung.bcitwebdeveloper.ca/" target="_blank">Ryan</a> & <a href="http://achou.bcitwebdeveloper.ca/" target="_blank">Alvin</a> 2019 &copy</p>
-        </div>
 
+    
+        <div class="newsletter">
+               
+                <h3>Newsletter</h3>
+
+                    
+                    <form action="./20-thank-you.html" method="POST" name="subscribe" class="subscribe" id="subscribe">
+                    
+                    <div class="email-section">
+                    
+                    <div class="email">
+                    <label for="email1" class="sr-only">Email Address</label>
+                    <input id="email1" name="email" placeholder="Email Address">
+                    </div>
+
+                    <div class="submit">
+                    <input class="submit-btn" type="submit" value="Subscribe">
+                    </div>
+
+                    </div>
+                    </form>
+        </div>
+                    
+    
+        
         <div class="social-media">
             <h3>Follow Us</h3>
             <a href="http://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -202,16 +222,9 @@
         </div>
        
 
-        <div class="newsletter">
-               
-            <h3>Newsletter</h3>
-                <form action="./20-thank-you.html" method="POST" name="subscribe" class="subscribe" id="subscribe">
-                <label for="email1" class="sr-only">Email Address</label>
-                <div class="email-section">
-                <input type="email" id="email1" name="email" placeholder="Email Address">
-                <input class="submit" type="submit" value="Subscribe">
-
-                </div><!-- end of  email-section -->
+                <div class="copyright">
+                    <p>Designed by : <a href="http://rleung.bcitwebdeveloper.ca/" target="_blank">Ryan</a> & <a href="http://achou.bcitwebdeveloper.ca/" target="_blank">Alvin</a> 2019 &copy</p>
+                </div>
                 </form>
             </div>
     </footer>
