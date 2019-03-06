@@ -8,10 +8,11 @@
     
     .top-menu-text {
         display: inline-block;
-        width: 30%;
+        width: 40%;
+        z-index: 8;
         h2 {
             color: $white;
-            font-size: 3.0em;
+            font-size: 4.0em;
             text-transform: uppercase;
         }
 
@@ -70,7 +71,7 @@
         font-size: 4em;
         color: white;
         top: 0;
-        left: -2%;
+        left: -4.5%;
         margin-top: 0;
     }
 
@@ -124,7 +125,7 @@
         .top-menu-text {
             width: 40%;
             h2 {
-                font-size: 2em;
+                font-size: 4em;
             }
         }
 
