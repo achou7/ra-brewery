@@ -7,7 +7,7 @@
     align-items: center;
     width: 60%;
     margin: 0 auto;
-    border-bottom: 1px solid #d30000;
+    margin-bottom: 50px;
     .box-overlay {
         position: relative;
         display: inline-block;
@@ -55,9 +55,6 @@
     padding: 45px
 }
 
-.types-div {
-    border-bottom: 1px solid #d30000;
-}
 
 .body-div.types-div{
     display: grid;
@@ -178,6 +175,7 @@
         padding: 45px;
         margin: 0 auto;
         border: 1px solid white;
+        margin-bottom: 50px;
         .box-overlay {
             width: 100%;
             height: auto;
@@ -207,7 +205,6 @@
         }
     }
     .body-div.types-div {
-        border-top: 1px solid #d30000;
         margin-top: 45px;
     }
 }

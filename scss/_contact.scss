@@ -82,7 +82,7 @@
         margin-bottom: 5px;
     }
     p{
-        line-height:.4em;
+        line-height:1.2em;
     }
     .location-text{
         padding-bottom: 10px;
@@ -306,7 +306,7 @@
         
         padding-top: 5px;
         text-align: right;
-        width:60%;
+        // width:60%;
         label{
             margin:0;
         }
@@ -355,4 +355,9 @@
         margin-right:20%;
     }
 
-}//<-- media 950 end
+    .email-me{
+        
+        margin-right:20%
+    }
+
+}//<-- media 1075 end
