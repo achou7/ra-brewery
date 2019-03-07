@@ -10,9 +10,16 @@
     <title>RA Brewery - Our Food</title>
 </head>
    <header>
-        <a class="main-logo-link" href="index.html">
-            <img class="main-logo-img" src="images/ra-brewing-logo.png" alt="RA Brewing logo">
-        </a>
+    <a class="main-logo-link" href="./index.html">
+        <img class="main-logo-img"
+            srcset= "/images/ra-brewing-logo-sm.png 130w,
+                     /images/ra-brewing-logo-med.png 195w,
+                     /images/ra-brewing-logo.png 260w"
+            sizes = "(max-width: 400px) 130px,
+                     (max-width: 900px) 195px,
+                     260px"
+            src="/images/ra-brewing-logo-sm.png" alt="RA Brewing logo">
+    </a>
         <div class="hamburger">
             <span></span>
             <span></span>
