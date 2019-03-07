@@ -107,18 +107,19 @@
 }
     .form-feedback{
     label{
-        font-size: 13px;
+        font-size: 14px;
         display: inline-block;
         width: 100%;
     }
     input{
         display: inline-block;
-        // margin-left: 10px;
-        // padding: 0 10px;
+        // padding: 4px;
+        border-radius:5px;
         font-size: 0.8em;
         background-color: black;
         color:$white;
         border:1px solid $white;
+        margin-top: 5px;
     }
 }
 
@@ -142,6 +143,7 @@
         select{
             background-color: black;
             color: $white;
+            border-radius:5px;
         }
 }
 .how-contact{
@@ -169,6 +171,7 @@
         height: 100px;
         font-size: 0.8em;
         background-color: black;
+        border-radius:5px;
         color:$white;
     
         p{
@@ -179,6 +182,7 @@
 
 .submit-button{
     text-align:center;
+    
 }
 
 .s-button{
