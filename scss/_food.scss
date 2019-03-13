@@ -35,7 +35,7 @@
 }
 
 .food-content {
-    width: 80%;
+    // width: 80%;
     padding: 60px;
     margin: 0 auto;
     .food-wrapper {
@@ -141,6 +141,8 @@
                     width: 100%;
                     height: auto;
                     margin-bottom: 45px;
+                    padding:20px 0;
+                    max-width:450px;
                     .food-header {
                         position: relative;
                         text-align: center;
