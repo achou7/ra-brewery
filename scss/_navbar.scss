@@ -127,6 +127,7 @@ header {
             ul {
                 display: none;
             }
+        
            
         }
 
@@ -164,4 +165,10 @@ header {
             }
         }
     }
+}
+
+.current{
+    border-bottom: $red 2px solid;
+    color:white;
+    
 }

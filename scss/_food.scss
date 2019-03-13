@@ -50,7 +50,7 @@
             border: 1px solid white;
             position: relative;
             width: 20vw;
-            height: 35vw;
+            height: 38vw;
             
             .food-header {
                 font-size: 3em;
@@ -66,6 +66,7 @@
                 top: 12%;
                 right: -5%;
                 z-index: 1;
+                // height:75%;
             }
         }
 
@@ -103,12 +104,12 @@
                 .food-overlay {
 
                     width: 25vw;
-                    height: 35vw;
+                    height: 49vw;
                 }
         
                 .food-text{
                     article {
-                        width: 90%;
+                        // width: 90%;
                 }
             }
         }
