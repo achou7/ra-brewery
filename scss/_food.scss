@@ -71,10 +71,11 @@
         }
 
         .food-text{
+            
             article {
                 width: 80%;
                 margin: 35px auto;
-                padding: 0 15px;
+                padding: 15px;  
                 h2 {
                     margin: 0;
                 }
@@ -102,16 +103,15 @@
     .food-content {
             .food-wrapper {
                 .food-overlay {
-
                     width: 25vw;
                     height: 49vw;
                 }
-        
-            //     .food-text{
-            //         article {
-            //             // width: 90%;
-            //     }
-            // }
+
+                .food-text {
+                    article {
+                        margin: 0 auto;
+                    }
+                }
         }
     }   
 }
