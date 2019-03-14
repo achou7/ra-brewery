@@ -1,0 +1,22 @@
+.full-page{
+    height: 100%;
+    position:relative;
+}
+.ty-subscribe{
+    text-align:center;
+    height: 100%;
+    border: 2px solid $white;
+    max-width:500px;
+    width:80%;
+    padding: 20px 70px;
+    margin:100px auto;
+}
+.newsletter-footer{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+
+    p{
+    text-align:center;
+}
+}

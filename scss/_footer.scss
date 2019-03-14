@@ -10,10 +10,8 @@ footer{
 .copyright{
     color: $white;
     text-align: center;
-    font-size: .8em;
-    margin-top: 20px;
-
-
+    font-size: .6em;
+    
 
     a{
         color:$white;
@@ -97,7 +95,8 @@ footer{
 @media screen and (min-width:460px){
 
     footer .copyright{
-        font-size:1em;
+        font-size:.7em;
+        
     }
 }
 
@@ -108,8 +107,12 @@ footer{
 footer{
     display:flex;
     justify-content: space-around;
-
+    .copyright{
+        padding-top: 20px;
+        text-align: right;
     }
+
+}
     .email-section{
          display:flex;
          justify-content: space-between;
@@ -138,9 +141,7 @@ footer{
 
     }
 
-    .copyright{
-        padding-top: 20px;
-    }
+    
 
 
 
